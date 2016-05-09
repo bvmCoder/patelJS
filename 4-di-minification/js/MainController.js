@@ -1,5 +1,5 @@
 function MainController(a, b) {
-  a.name = 'Todd';
+  a.name = 'Amit';
 }
 
 angular
