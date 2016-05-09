@@ -22,6 +22,9 @@ function MoviesController() {
   }, {
     title: 'Saving Private Ryan',
     year: '1998'
+  }, {
+    title: 'The Aviator',
+    year: '2004'
   }];
 }
 

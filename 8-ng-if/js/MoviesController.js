@@ -7,7 +7,7 @@ function MoviesController() {
     title: 'Inception',
     year: '2010',
     popular: false
-  },{
+  }, {
     title: 'The Matrix',
     year: '1999',
     popular: true
@@ -15,8 +15,7 @@ function MoviesController() {
     title: 'Saving Private Ryan',
     year: '1998',
     popular: true
-  },
-  {
+  }, {
     title: 'The Aviator',
     year: '2004',
     popular: false
