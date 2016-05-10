@@ -1,10 +1,12 @@
 function MoviesController() {
+  var self = this;
+
   this.newTitle = '';
   this.newRelease = '';
-  this.onChange = function () {
+  this.onChange = function onChange() {
     console.log('Change!', this.newTitle);
   };
-  this.addMovie = function () {
+  this.addMovie = function addMovie() {
     this.favorites.unshift({
       title: this.newTitle,
       year: this.newRelease
