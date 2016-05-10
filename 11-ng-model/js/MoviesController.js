@@ -1,5 +1,6 @@
 function MoviesController() {
-  this.favorites = [{
+  var self = this;
+  self.favorites = [{
     title: 'The Shawshank Redemption',
     year: '1994'
   }, {

@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <title>My Angular app</title>
     <script src="js/angular.js"></script>
     <style>
-      .old {background: red;}
-      .modern {background: blue;}
-      .new {background: green;}
+      .old {background: #FF7788;}
+      .modern {background: #7788FF;}
+      .new {background: #88FF77;}
       img {
         max-width: 60px;
       }
@@ -27,6 +28,7 @@
           </a>
           <p>Released in: {{ movie.year }}</p>
           <input type="text" ng-model="movie.year">
+          <hr />
         </li>
       </ul>
     </div>

@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <title>My Angular app</title>
-    <script src="js/angular.js"></script>
+    <script src="./js/angular.js"></script>
     <style>
-      .old {background: red;}
-      .modern {background: blue;}
-      .new {background: green;}
+      .old {background: #FF7788;}
+      .modern {background: #7788FF;}
+      .new {background: #88FF77;}
     </style>
   </head>
   <body>
@@ -20,12 +21,12 @@
           ng-repeat="movie in movies.favorites">
           <p>{{ movie.title }}</p>
           <p>Released in: {{ movie.year }}</p>
-          <input type="text" ng-model="movie.year">
+          <input type="text" ng-model="movie.year" />
         </li>
       </ul>
     </div>
 
-    <script src="js/app.js"></script>
-    <script src="js/MoviesController.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/MoviesController.js"></script>
   </body>
 </html>
