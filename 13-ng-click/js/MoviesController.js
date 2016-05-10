@@ -1,11 +1,15 @@
 function MoviesController() {
+  //var self = this;
   this.likesList = [];
+
   this.unlike = function (index) {
     this.likesList.splice(index, 1);
   };
+
   this.addToLikes = function (movie) {
-    this.likesList.push(movie);
+    this.likesList.unshift(movie);
   };
+
   this.favorites = [{
     title: 'The Shawshank Redemption',
     year: '1994'

@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <title>My Angular app</title>
-    <script src="js/angular.js"></script>
+    <script src="./js/angular.js"></script>
     <style>
     .likes {
       background: #f9f9f9;
@@ -15,10 +16,10 @@
     <div ng-controller="MoviesController as movies">
       <div class="likes">
         <p>
-          Todd's like list
+          Afzal's like list
         </p>
         <ul>
-          <li ng-repeat="like in movies.likesList">
+          <li ng-repeat="like in movies.likesList track by $index">
             <p>{{ like.title }}</p>
             <a href="" ng-click="movies.unlike($index);">
               Unlike!
@@ -27,7 +28,7 @@
         </ul>
       </div>
       <ul>
-        <li ng-repeat="movie in movies.favorites">
+        <li ng-repeat="movie in movies.favorites track by $index">
           <p>
             {{ movie.title }}
           </p>
@@ -38,7 +39,7 @@
       </ul>
     </div>
 
-    <script src="js/app.js"></script>
-    <script src="js/MoviesController.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/MoviesController.js"></script>
   </body>
 </html>

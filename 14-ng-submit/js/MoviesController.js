@@ -1,4 +1,5 @@
 function MoviesController() {
+  var self = this;
   this.newTitle = '';
   this.newRelease = '';
   this.addMovie = function () {
