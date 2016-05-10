@@ -16,6 +16,7 @@
         .twenty {
             background: #2F5F8F;
         }
+
         .new {
             background: #88FF77;
         }
@@ -32,8 +33,10 @@
           'new': movie.year > 2000
         }" -->
         <div ng-repeat="movie in movies.favorites"
-             ng-class="(movie.year < 1995) ? 'old' : (movie.year > 1995 && movie.year < 2000) ? 'modern' : (movie.year > 2000 && movie.year < 2005) ? 'twenty' : 'new'"
-              >
+            ng-class=" (movie.year < 1995) ? 'old' :
+             (movie.year > 1995 && movie.year < 2000) ? 'modern' :
+             (movie.year > 2000 && movie.year < 2005) ? 'twenty' :
+             'new' ">
             <p>{{ movie.title }}</p>
             <p>Released in: {{ movie.year }}</p>
             <hr />
