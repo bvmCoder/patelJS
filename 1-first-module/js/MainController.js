@@ -15,12 +15,12 @@ var MainController = function MainController($scope, $rootScope) {
     };
 
 
-    console.log($scope);
-    console.log($rootScope);
+    //console.log($scope);
+    //console.log($rootScope);
 };
 
 MainController.$inject = ['$scope', '$rootScope'];
-
+// getter here to assign controller here
 angular
     .module('app')
     .controller('MainController', MainController);
