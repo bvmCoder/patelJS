@@ -30,9 +30,9 @@
         </button>
       </form>
       <ul>
-        <li ng-repeat="movie in movies.favorites">
+        <li ng-repeat="movie in movies.favorites | orderBy: 'title'">
           <p>
-            {{ movie.title }} and it's Index {{ $index }}
+            {{ movie.title }} and it's Index: {{ $index }}
           </p>
           <p>Released in: {{ movie.year }}</p>
         </li>

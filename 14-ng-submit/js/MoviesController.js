@@ -1,4 +1,4 @@
-function MoviesController() {
+var MoviesController = function MoviesController() {
   var self = this;
 
   this.newTitle = ''; // empty string initially
@@ -9,6 +9,7 @@ function MoviesController() {
       title: this.newTitle,
       year: this.newRelease
     });
+    this.newTitle = this.newRelease = '';
 
   };
   this.favorites = [{
@@ -27,7 +28,7 @@ function MoviesController() {
     title: 'The Aviator',
     year: '2004'
   }];
-}
+};
 
 angular
   .module('app')
