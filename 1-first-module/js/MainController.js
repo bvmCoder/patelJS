@@ -1,25 +1,29 @@
 // this is called a getter
 
 var MainController = function MainController($scope, $rootScope) {
-  $scope.name = 'Amit';
+    $scope.firstName = 'Amit';
+    $scope.lastName = 'Agwan'; // properties
 
-  $scope.firstName = 'Agwan';
+    var self = this;
+    this.name = 'Dixit';
 
-  var self = this;
+    self.firstName = 'Amit';
+    self.lastName = 'Sharma';
+    // method in the object
+    $scope.addNewName = function addNewName() {
 
-  self.firstName = 'Amit';
-  self.lastName = 'Sharma';
+    };
 
 
-  this.name = 'Dixit';
-  console.log($scope);
-  console.log($rootScope);
-}
+    console.log($scope);
+    console.log($rootScope);
+};
 
 MainController.$inject = ['$scope', '$rootScope'];
+
 angular
-.module('app')
-.controller('MainController', MainController);
+    .module('app')
+    .controller('MainController', MainController);
 
 
 

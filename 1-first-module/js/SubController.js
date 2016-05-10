@@ -1,11 +1,11 @@
 var SubController = function SubController($scope, $rootScope) {
-  $scope.name = 'Afzal';
-  $scope.lastName = 'Sharma';
+  $scope.firstName = 'Afzal';
+  $scope.lastName = 'Agwan';
 
   var self = this;
-  self.firstName = 'Afzal';
-  self.lastName = 'Agwan';
-}
+  this.firstName = 'Samreen';
+  this.lastName = 'Saleem';
+};
 
 
 

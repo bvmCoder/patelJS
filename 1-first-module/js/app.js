@@ -1,4 +1,4 @@
   // creating a new module, it is the main module
-  // setter module
-angular
-  .module('app', []);
+  // setter module is the main module
+  angular
+      .module('app', []);
