@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html ng-app="app">
   <head>
     <title>My Angular app</title>
-    <script src="js/angular.js"></script>
+    <script src="./js/angular.js"></script>
     <style>
     form {
       background: #f9f9f9;
@@ -26,6 +27,8 @@
         <input
           type="text"
           placeholder="Release year"
+          ng-focus="movies.onFocus();"
+          ng-blur="movies.onBlur();"
           ng-model="movies.newRelease">
         <button type="submit">
           Add new movie!
@@ -41,7 +44,7 @@
       </ul>
     </div>
 
-    <script src="js/app.js"></script>
-    <script src="js/MoviesController.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/MoviesController.js"></script>
   </body>
 </html>

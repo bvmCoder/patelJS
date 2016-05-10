@@ -1,10 +1,12 @@
 function MoviesController() {
+  var self = this;
+
   this.newTitle = '';
   this.newRelease = '';
-  this.onFocus = function () {
+  this.onFocus = function onFocus() {
     console.log('Focus!');
   };
-  this.onBlur = function () {
+  this.onBlur = function onBlur() {
     console.log('Blur!');
   };
   this.addMovie = function () {
