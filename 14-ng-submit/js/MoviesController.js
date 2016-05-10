@@ -1,12 +1,15 @@
 function MoviesController() {
   var self = this;
-  this.newTitle = '';
-  this.newRelease = '';
-  this.addMovie = function () {
+
+  this.newTitle = ''; // empty string initially
+  this.newRelease = ''; // empty string initially
+
+  this.addMovie = function addMovie() {
     this.favorites.unshift({
       title: this.newTitle,
       year: this.newRelease
-    })
+    });
+
   };
   this.favorites = [{
     title: 'The Shawshank Redemption',
@@ -29,3 +32,5 @@ function MoviesController() {
 angular
   .module('app')
   .controller('MoviesController', MoviesController);
+
+  //this.newTitle = this.newRelease = '';
