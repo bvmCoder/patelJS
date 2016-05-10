@@ -1,5 +1,6 @@
 function MainController() {
-  this.name = 'Main';
+  var self = this;
+  self.name = 'Afzal';
 }
 
 angular
