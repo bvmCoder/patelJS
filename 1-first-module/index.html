@@ -5,7 +5,7 @@
     <title>Angular Application</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
     <script src="./js/angular.js"></script>
-    <style>
+  <!--  <style>
         [ng\:cloak],
         [ng-cloak],
         [data-ng-cloak],
@@ -14,21 +14,19 @@
         .x-ng-cloak {
             display: none !important;
         }
-    </style>
+    </style> -->
 </head>
 <!-- ng-cloak -->
 <body>
-    <div
-      ng-controller="MainController as main"
-      ng-bind="firstName + ' and ' + lastName">
-        <!-- {{ firstName }} and {{ lastName }} -->
+  <!-- ng-bind="main.firstName + ' and ' + main.lastName" -->
+    <div ng-controller="MainController as main">
+        {{ main.firstName }} and {{ main.lastName }}
         <h1>Here is the SubController</h1>
+        <!-- ng-bind="sub.firstName + ' and ' + sub.lastName" -->
         <div ng-controller="SubController as sub">
-            {{ sub.firstName }} and {{ sub.lastName }}
+          {{ sub.firstName }} and {{ sub.lastName }}
         </div>
-
     </div>
-
 
 
     <script src="./js/app.js"></script>
