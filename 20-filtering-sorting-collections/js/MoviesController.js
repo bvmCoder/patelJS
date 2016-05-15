@@ -1,5 +1,7 @@
-function MoviesController() {
-  this.favorites = [{
+var MoviesController = function MoviesController() {
+  var self = this;
+
+  self.favorites = [{
     title: 'The Shawshank Redemption',
     year: '1994'
   }, {
@@ -15,7 +17,7 @@ function MoviesController() {
     title: 'The Aviator',
     year: '2004'
   }];
-}
+};
 
 angular
   .module('app')
