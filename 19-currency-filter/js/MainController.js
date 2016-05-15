@@ -1,6 +1,7 @@
-function MainController() {
-  this.myAmount = 209.82;
-}
+var MainController = function MainController() {
+  var self = this;
+  self.myAmount = 209.82;
+};
 
 angular
   .module('app')
