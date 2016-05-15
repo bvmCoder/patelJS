@@ -1,18 +1,20 @@
-function MoviesController() {
+var MoviesController = function MoviesController() {
     var self = this;
 
-    this.newTitle = '';
-    this.newRelease = '';
-    this.onChange = function onChange() {
-        console.log('Change!', this.newTitle);
+    self.newTitle = '';
+    self.newRelease = '';
+
+    self.onChange = function onChange() {
+        console.log('Change!', self.newTitle);
     };
-    this.addMovie = function addMovie() {
-        this.favorites.unshift({
-            title: this.newTitle,
-            year: this.newRelease
+    self.addMovie = function addMovie() {
+        self.favorites.unshift({
+            title: self.newTitle,
+            year: self.newRelease
         });
     };
-    this.favorites = [{
+    
+    self.favorites = [{
         title: 'The Shawshank Redemption',
         year: '1994'
     }, {
@@ -28,7 +30,7 @@ function MoviesController() {
         title: 'The Aviator',
         year: '2004'
     }];
-}
+};
 
 angular
     .module('app')
