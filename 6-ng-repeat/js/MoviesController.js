@@ -16,7 +16,7 @@ var MoviesController = function MoviesController() {
         title: 'The Aviator',
         year: '2004'
     }];
-    console.log(self.favorites);
+    //console.log(self.favorites);
 };
 
 angular

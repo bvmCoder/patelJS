@@ -1,6 +1,6 @@
-function MainController() {
+var MainController = function MainController() {
 
-}
+};
 
 angular
   .module('app')

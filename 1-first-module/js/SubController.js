@@ -11,5 +11,5 @@ var SubController = function SubController($scope) {
 
 SubController.$inject = ['$scope'];
 angular
-.module('app')
+.module('macPro')
 .controller('SubController', SubController);

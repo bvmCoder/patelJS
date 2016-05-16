@@ -2,4 +2,4 @@
   // setter module is the main module
 
   angular
-      .module('app', []);
+      .module('macPro', []);

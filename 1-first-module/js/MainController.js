@@ -22,7 +22,7 @@ var MainController = function MainController($scope, $rootScope) {
 MainController.$inject = ['$scope', '$rootScope'];
 // getter here to assign controller here
 angular
-    .module('app')
+    .module('macPro')
     .controller('MainController', MainController);
 
 
