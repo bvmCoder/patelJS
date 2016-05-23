@@ -3,7 +3,9 @@
   <head>
     <title>Angular Application</title>
     <meta charset="utf-8">
-    <script src="./js/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <!-- <script src="./js/angular.js"></script> -->
     <style>
     a { margin: 10px 10px 10px 0; display: inline-block; background: #f9f9f9; color: #444; padding: 8px 10px;}
     </style>
@@ -11,7 +13,7 @@
   <body>
     <div ng-controller="MainController as main">
       <p>
-        {{ main.myAmount | currency:'£':1 }}
+        {{ main.myAmount | currency:'$':1 }}
       </p>
     </div>
 
