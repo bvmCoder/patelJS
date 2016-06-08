@@ -13,6 +13,7 @@
         placeholder="Search by year"
         ng-model="search">
       <ul>
+      <!-- seach by Year Only -->
         <li
           ng-repeat="movie in movies.favorites | filter: { year: search }">
           <p>{{ movie.title }}</p>
