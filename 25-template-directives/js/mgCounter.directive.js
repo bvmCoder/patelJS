@@ -4,6 +4,7 @@ var mgCounter = function mgCounter() {
         restrict: 'E',
         //scope: {},
         controller: 'CounterController as counter',
+        controllerAs: 'counter',
         template: `
           <div class="counter">
             <input type="text" ng-model="counter.count" />
