@@ -11,13 +11,13 @@ var mgStretch = function mgStretch() {
             element.addEventListener('focus', function() {
                 this.style.width = 250 + 'px';
                 this.style.padding = '4px 2px';
-                //this.style.outline = 'red auto 2px';
+                this.style.outline = 'red auto 2px';
                 console.dir(this.style);
             }, false);
             element.addEventListener('blur', function() {
                 this.style.width = 120 + 'px';
-                this.style.padding = '0px';
-                //this.style.outline = 'none';
+                this.style.padding = '1px';
+                this.style.outline = 'none';
             }, false);
         }
     };
