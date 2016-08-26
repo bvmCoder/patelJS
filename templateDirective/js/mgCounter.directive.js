@@ -1,11 +1,13 @@
-var mgCounter = function mgCounter() {
+(function() {
+    'use strict';
+    var mgCounter = function mgCounter() {
 
-    return {
-        restrict: 'E',
-        //scope: {},
-        controller: 'CounterController as counter',
-        controllerAs: 'counter',
-        template: `
+        return {
+            restrict: 'E',
+            //scope: {},
+            controller: 'CounterController as counter',
+            controllerAs: 'counter',
+            template: `
           <div class="counter">
             <input type="text" ng-model="counter.count" />
             <button type="button" ng-click="counter.decrement();">
@@ -16,9 +18,11 @@ var mgCounter = function mgCounter() {
             </button>
           </div>
         `
+        };
     };
-};
 
-angular
-    .module('app')
-    .directive('mgCounter', mgCounter);
+    angular
+        .module('app')
+        .directive('mgCounter', mgCounter);
+
+})();
