@@ -1,8 +1,13 @@
-var MainController = function MainController() {
-  var self = this;
-  self.name = 'Afzal';
-};
+(function() {
+    'use strict';
 
-angular
-  .module('app')
-  .controller('MainController', MainController);
+    var MainController = function MainController() {
+        var self = this;
+        self.name = 'Afzal';
+    };
+
+    angular
+        .module('app')
+        .controller('MainController', MainController);
+
+})();

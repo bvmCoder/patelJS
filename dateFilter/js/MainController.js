@@ -1,3 +1,6 @@
+(function() {
+    'use strict';
+
 var MainController = function MainController() {
   var self = this;
   self.myDate = 1288323623006;
@@ -6,3 +9,5 @@ var MainController = function MainController() {
 angular
   .module('app')
   .controller('MainController', MainController);
+
+})();
