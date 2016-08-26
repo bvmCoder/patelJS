@@ -1,13 +1,16 @@
-function orderForm() {
-    return {
-        restrict: 'E',
-        scope: {},
-        bindToController: {
-            data: '=',
-            submit: '&'
-        },
-        controller: 'OrderFormController as form',
-        template: `
+(function() {
+    'use strict';
+
+    function orderForm() {
+        return {
+            restrict: 'E',
+            scope: {},
+            bindToController: {
+                data: '=',
+                submit: '&'
+            },
+            controller: 'OrderFormController as form',
+            template: `
       <form name="orderForm" novalidate ng-submit="form.onSubmit();">
         <input name="name" required="" type="text" ng-model="form.data.name" placeholder="Your name">
         <div
@@ -37,9 +40,11 @@ function orderForm() {
         </button>
       </form>
     `
-    };
-}
+        };
+    }
 
-angular
-    .module('app')
-    .directive('orderForm', orderForm);
+    angular
+        .module('app')
+        .directive('orderForm', orderForm);
+
+})();
