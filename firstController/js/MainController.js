@@ -1,7 +1,12 @@
-var MainController = function MainController() {
+(function() {
+    'use strict';
 
-};
+    var MainController = function MainController() {
 
-angular
-  .module('app')
-  .controller('MainController', MainController);
+    };
+
+    angular
+        .module('app')
+        .controller('MainController', MainController);
+
+})();

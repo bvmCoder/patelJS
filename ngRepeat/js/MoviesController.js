@@ -1,3 +1,6 @@
+(function() {
+    'use strict';
+
 var MoviesController = function MoviesController() {
     var self = this;
     self.favorites = [{
@@ -22,3 +25,5 @@ var MoviesController = function MoviesController() {
 angular
     .module('app')
     .controller('MoviesController', MoviesController);
+
+})();
