@@ -10,7 +10,7 @@ var UserController =  function UserController(UserService) {
             .getUser(this.userId)
             .then(function(response) {
                 self.chosenUser = response;
-            })
+            });
     };
 };
 

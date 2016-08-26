@@ -8,9 +8,9 @@ var UserService = function UserService($http) {
                 return response.data;
             }, function(reason) {
                 // error
-            })
+            });
     };
-    
+
     var _getAllUsers = function _getAllUsers() {
 
     };

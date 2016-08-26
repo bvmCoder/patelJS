@@ -4,10 +4,10 @@ var CounterController = function CounterController() {
     console.log(self.count);
     self.increment = function increment() {
         self.count++;
-    }
+    };
     self.decrement = function decrement() {
         self.count--;
-    }
+    };
 };
 
 angular

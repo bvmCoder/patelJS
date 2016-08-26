@@ -14,7 +14,7 @@ var MoviesController = function MoviesController() {
         self.favorites.unshift({
             title: self.newTitle,
             year: self.newRelease
-        })
+        });
         self.newTitle = self.newRelease = '';
     };
     self.favorites = [{
