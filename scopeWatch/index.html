@@ -4,30 +4,19 @@
     <title>Angular Application</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
-    <!-- <script src="./js/angular.js"></script> -->
   </head>
   <body>
-    <div ng-controller="MoviesController as movies">
-      <ul>
-        <li ng-repeat="movie in movies.favorites">
-          <p>{{ movie.title }}</p>
-          <p>Released in: {{ movie.year }}</p>
-          <div ng-switch="movie.category">
-              <div ng-switch-when="action">
-                Action movie!
-              </div>
-              <div ng-switch-when="thriller">
-                Thriller movie!
-              </div>
-              <div ng-switch-when="fantasy">
-                Fantasy movie!
-              </div>
-              <div ng-switch-default>
-                The Movie has no category
-              </div>
-          </div>
-        </li>
-      </ul>
+    <div ng-controller="CounterController as counter">
+    	<h3>Counter: {{ counter.count }}</h3>
+    	<a href="" ng-click="counter.increment();" class="counter__increment">Increment Counter</a> -
+    	<a href="" ng-click="counter.decrement();" class="counter__decrement">Decrement Counter</a>
+
+    	<ul>
+    		<li ng-repeat="list in counter.countList">
+    			<input type="text" ng-model="list.id" />
+    		</li>
+    	</ul>
+
     </div>
 
     <script src="./js/app.js"></script>
