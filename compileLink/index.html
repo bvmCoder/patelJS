@@ -1,0 +1,37 @@
+<html ng-app="app">
+
+<head>
+    <title>Angular Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <!-- <script src="./js/angular.js"></script> -->
+    <style>
+    .error {
+        border: 1px solid #1133FF;
+        padding: 10px 15px;
+        margin: 0 0 10px;
+        border-radius: 3px;
+    }
+
+    .error-warning {
+        border: 1px solid #D40000;
+    }
+
+    .error-invalid {
+        border: 1px solid #77FF88;
+    }
+    </style>
+</head>
+
+<body>
+    <div ng-controller="ErrorController as errors">
+        <div ng-repeat="error in errors.list" error-message type="{{ error.type }}">
+            {{ error.message }}
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/directives/ErrorMessage.js"></script>
+    <script src="./js/controllers/ErrorController.js"></script>
+</body>
+
+</html>
